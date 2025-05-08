@@ -1,3 +1,5 @@
+// 1.Reverse a String, 2.Palindrome or not, 3.Fibonacci numbers
+
 //1. Reverse a String
 const str = "Abhishek"
 const reverse = str.split('').reverse().join('');
