@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML5 Full Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 1rem; }
+    section, article, aside, nav, footer, header { border: 1px solid #ccc; margin: 1rem 0; padding: 1rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Semantic structure -->
+  <header>
+    <h1>HTML5 All Tags Demo</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Section with Article</h2>
+      <article>
+        <h3>Article Title</h3>
+        <p>This is an article inside a section. It demonstrates semantic tags.</p>
+        <figure>
+          <img src="https://via.placeholder.com/150" alt="Example Image">
+          <figcaption>Figure with caption</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Aside</h3>
+      <p>This is a sidebar or note.</p>
+    </aside>
+
+    <!-- Form Tags -->
+    <section>
+      <h2>Forms</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range"><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">Agree to terms</label><br><br>
+
+        <input type="radio" name="choice" value="1" checked> Option 1
+        <input type="radio" name="choice" value="2"> Option 2<br><br>
+
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="date">Pick a date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <button type="submit">Submit</button>
+        <meter value="0.6">60%</meter>
+        <progress value="70" max="100">70%</progress>
+      </form>
+    </section>
+
+    <!-- Multimedia -->
+    <section>
+      <h2>Media</h2>
+      <video controls width="300">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <!-- Interactive Tags -->
+    <section>
+      <h2>Interactive Tags</h2>
+      <details>
+        <summary>Click to expand</summary>
+        <p>This is hidden content inside the details tag.</p>
+      </details>
+
+      <dialog open>
+        <p>This is a dialog box (HTML5).</p>
+      </dialog>
+    </section>
+
+    <!-- Other Useful Tags -->
+    <section>
+      <h2>Miscellaneous HTML5 Elements</h2>
+      <mark>Marked Text</mark><br>
+      <time datetime="2025-05-10">May 10, 2025</time><br>
+      <abbr title="World Health Organization">WHO</abbr><br>
+      <code>console.log("Hello");</code><br>
+      <output>123</output><br>
+      <canvas id="myCanvas" width="100" height="50" style="border:1px solid #000;"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 All rights reserved.</p>
+  </footer>
+
+  <!-- Scripting -->
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = "blue";
+    ctx.fillRect(10, 10, 80, 30);
+  </script>
+
+</body>
+</html>
