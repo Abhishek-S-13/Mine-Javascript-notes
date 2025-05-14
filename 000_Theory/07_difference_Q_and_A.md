@@ -2,10 +2,10 @@
 ```Javascript
 ✅ 1. var vs let vs const
 Feature	        var	            let	            const
-Scope	        Function	    Block	        Block
+Scope	          Function	      Block	          Block
 Re-declaration	Allowed	        Not allowed	    Not allowed
-Re-assignment	Allowed	        Allowed	        ❌ Not allowed
-Hoisted     	Yes (undefined)	Yes (TDZ)	    Yes (TDZ)
+Re-assignment	  Allowed	        Allowed	        ❌ Not allowed
+Hoisted     	  Yes (undefined)	Yes (TDZ)	      Yes (TDZ)
 
 function testScope() {
   if (true) {
@@ -40,9 +40,9 @@ console.log(b);     // null
 
 ✅ 4. function vs arrow function =>
 Feature	        Regular Function	Arrow Function
-this	        Dynamic	            Lexical (inherits)
+this	          Dynamic	            Lexical (inherits)
 Constructor	    Yes	                No
-arguments	    Available	        Not available
+arguments	      Available	          Not available
 
 * Arrow functions inherit this from their lexical context.
 * Regular functions define their own this based on the caller.
