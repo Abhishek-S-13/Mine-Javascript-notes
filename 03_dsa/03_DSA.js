@@ -39,6 +39,13 @@ function gcd(a, b) {
 console.log(gcd(48, 18)); // Output: 6
 console.log(gcd(12, 8)); // Output: 4
 
+/*
+gcd(48, 18) -> b !== 0 → Call gcd(18, 48 % 18) → gcd(18, 12)
+gcd(18, 12) -> b !== 0 → Call gcd(12, 18 % 12) → gcd(12, 6)
+gcd(12, 6) -> b !== 0 → Call gcd(6, 12 % 6) → gcd(6, 0)
+gcd(6, 0) -> b === 0 → Return 6
+*/
+
 // 4. Check for Anagram 
 function isAnagram(str1, str2) {
     let word1 = str1.replace(/\s/g, '').toLowerCase().split('').sort().join('');

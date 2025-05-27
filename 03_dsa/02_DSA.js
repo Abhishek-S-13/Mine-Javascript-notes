@@ -57,7 +57,17 @@ let arr2 = [1, 2, 2, 3, 4, 4, 5];
 let uniqueArr2 = arr2.filter((value, index) => arr2.indexOf(value) === index);
 console.log(uniqueArr2); // Output: [1, 2, 3, 4, 5]
 
-// 4. Sorting an arry
+// 3.2 Using Normal Function
+let arr3 = [1, 2, 2, 3, 4, 4, 5];
+
+function isFirstOccurrence(value, index) {
+  return arr3.indexOf(value) === index;
+}
+let uniqueArr3 = arr3.filter(isFirstOccurrence);
+
+console.log(uniqueArr3);
+
+// 4. Sorting an array
 let numbers = [10, 5, 8, 1];
 numbers.sort((a, b) => a - b); // ascending order
 console.log(numbers); // Output: [1, 5, 8, 10]
@@ -65,4 +75,11 @@ console.log(numbers); // Output: [1, 5, 8, 10]
 numbers.sort((a, b) => b - a); // descending order
 console.log(numbers); // Output: [10, 8, 5, 1]
 
+// 4.1 Using normal function Sorting array
+let numbers11 = [10, 5, 8, 1];
+function ascendingOrder(a, b) {
+    return a - b;
+}
+numbers11.sort(ascendingOrder); 
+console.log(numbers11);  // Output: [1, 5, 8, 10]
 

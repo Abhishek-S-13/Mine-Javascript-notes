@@ -37,8 +37,8 @@ console.log(fibonacci(10));
 
 // 3.1 Recursive version (not efficient for large n)
 function fibonacci2(n) {
-if (n < 2) return n;
-return fibonacci2(n - 1) + fibonacci2(n - 2);
+    if (n < 2) return n;
+    return fibonacci2(n - 1) + fibonacci2(n - 2);
 }
 console.log(fibonacci2(7)); 
 //OP:  13 (7th Fibonacci number)

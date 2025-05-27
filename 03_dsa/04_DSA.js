@@ -33,7 +33,7 @@ console.log(decimalToBinary(5));  // Output: "101"
   
 // 4. Swap two number
 function swap(a,b,c){
-    return [a,b,c] =[c,b,a];
+    return [a,b,c] = [c,b,a];
 }
 console.log(swap(2,3,4));   // 4, 3, 2
 
@@ -43,4 +43,15 @@ function sumOfDigits(num) {
 }
 console.log(sumOfDigits(1234));   // Output: 10 (1 + 2 + 3 + 4)
 console.log(sumOfDigits(-567));   // Output: 18 (5 + 6 + 7)
-  
+
+// 5.1 Using Normal Function 
+function sumOfDigits(num) {
+    function addDigits(a, b) {
+        return a + Number(b);
+    }
+    return Math.abs(num)
+             .toString()
+             .split('')
+             .reduce(addDigits, 0);
+}
+console.log(sumOfDigits(1234));  // Output: 10 (1 + 2 + 3 + 4)
